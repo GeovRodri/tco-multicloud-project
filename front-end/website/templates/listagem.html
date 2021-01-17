@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="card">
+    <div class="card-header">
+        <h4 class="card-title"> Resultado</h4>
+    </div>
+
+    <div class="card-body">
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead class="text-primary">
+                    <th>Cloud </th>
+                    <th>Tipo </th>
+                    <th>CPU </th>
+                    <th>Memoria </th>
+                    <th>HD </th>
+                    <th>Região </th>
+                    <th>Preço </th>
+                </thead>
+
+                <tbody>
+                    {% for machine in machines %}
+                        <tr>
+                            <td>{{ machine.cloud|default_if_none:"-" }}</td>
+                            <td>{{ machine.type|default_if_none:"-" }}</td>
+                            <td>{{ machine.cpu|default_if_none:"-" }}</td>
+                            <td>{{ machine.ram|default_if_none:"-" }}</td>
+                            <td>{{ machine.hd|default_if_none:"-" }}</td>
+                            <td>{{ machine.pricing.region|default_if_none:"-" }}</td>
+                            <td>{{ machine.pricing.price|default_if_none:"-" }}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+{% endblock content %}

@@ -1,0 +1,14 @@
+requests
+ijson
+pymongo
+unidecode
+requests-html
+sshtunnel
+matplotlib
+numpy
+plotly
+Flask
+flask_restful
+wtforms
+wtforms_json
+flask_cors

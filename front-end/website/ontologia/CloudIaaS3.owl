@@ -1,0 +1,490 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#"
+     xml:base="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:CloudIaaS="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#hasCPU -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#hasCPU">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#MaquinaVirtual"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#CPU"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#hasHD -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#hasHD">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#MaquinaVirtual"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#HD"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#hasPrice -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#hasPrice">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#MaquinaVirtual"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#Price"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#hasRAM -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#hasRAM">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#MaquinaVirtual"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#RAM"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#hasSO -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#hasSO">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#MaquinaVirtual"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#SO"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#hasTransferenciaDeDados -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#hasTransferenciaDeDados">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#MaquinaVirtual"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#TransferenciaDeDados"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#resourceName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#resourceName">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#Alibaba -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#Alibaba">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#MaquinaVirtual"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#Aws"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#Aws -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#Aws">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#MaquinaVirtual"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#Azure -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#Azure">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#MaquinaVirtual"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#CPU -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#CPU">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#RecursoDeComputacao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#CaaS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#CaaS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#IaaS"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#DaaS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#DaaS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#IaaS"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#Google -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#Google">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#MaquinaVirtual"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#HD -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#HD">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#RecursoDeComputacao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#IaaS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#IaaS">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#MaquinaVirtual -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#MaquinaVirtual">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#IaaS"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#Price -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#Price">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#RecursoDeComputacao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#RAM -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#RAM">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#RecursoDeComputacao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#RecursoDeComputacao -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#RecursoDeComputacao">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#IaaS"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#SO -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#SO">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#RecursoDeComputacao"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#TransferenciaDeDados -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#TransferenciaDeDados">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#CaaS"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#AlibabaCPU -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#AlibabaCPU">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#CPU"/>
+        <resourceName>&apos;CPU&apos;:</resourceName>
+        <rdfs:comment>CPU</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#AlibabaHD -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#AlibabaHD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#HD"/>
+        <resourceName>&apos;SSD Cloud Disk&apos;:</resourceName>
+        <rdfs:comment>SSD Cloud Disk</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#AlibabaPricing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#AlibabaPricing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#Price"/>
+        <resourceName>pricing.price</resourceName>
+        <rdfs:comment>pricing.price</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#AlibabaRAM -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#AlibabaRAM">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#RAM"/>
+        <resourceName>&apos;Memory&apos;:</resourceName>
+        <rdfs:comment>Memory</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#AwsCPU -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#AwsCPU">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#CPU"/>
+        <resourceName>&apos;vcpu&apos;:</resourceName>
+        <rdfs:comment>vcpu</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#AwsHD -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#AwsHD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#HD"/>
+        <resourceName>&apos;storage&apos;:</resourceName>
+        <rdfs:comment>storage</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#AwsPricing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#AwsPricing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#Price"/>
+        <resourceName>pricing.</resourceName>
+        <rdfs:comment>pricing.</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#AwsRAM -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#AwsRAM">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#RAM"/>
+        <resourceName>&apos;memory&apos;:</resourceName>
+        <rdfs:comment>memory</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#AzureCPU -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#AzureCPU">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#CPU"/>
+        <resourceName>vCPU:</resourceName>
+        <rdfs:comment>vCPU</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#AzureHD -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#AzureHD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#HD"/>
+        <resourceName>Temporary storage</resourceName>
+        <rdfs:comment>Temporary storage</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#AzurePricing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#AzurePricing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#Price"/>
+        <resourceName>pricing.Pay as you go</resourceName>
+        <rdfs:comment>pricing.Pay as you go</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#AzureRAM -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#AzureRAM">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#RAM"/>
+        <resourceName>RAM:</resourceName>
+        <rdfs:comment>RAM</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#alibaba -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#alibaba">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#Alibaba"/>
+        <hasCPU rdf:resource="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#AlibabaCPU"/>
+        <hasHD rdf:resource="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#AlibabaHD"/>
+        <hasPrice rdf:resource="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#AlibabaPricing"/>
+        <hasRAM rdf:resource="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#AlibabaRAM"/>
+        <rdfs:comment>alibaba</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#aws -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#aws">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#Aws"/>
+        <hasCPU rdf:resource="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#AwsCPU"/>
+        <hasHD rdf:resource="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#AwsHD"/>
+        <hasPrice rdf:resource="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#AwsPricing"/>
+        <hasRAM rdf:resource="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#AwsRAM"/>
+        <rdfs:comment>aws</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#azure -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#azure">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#Azure"/>
+        <hasCPU rdf:resource="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#AzureCPU"/>
+        <hasHD rdf:resource="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#AzureHD"/>
+        <hasPrice rdf:resource="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#AzurePricing"/>
+        <hasRAM rdf:resource="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#AzureRAM"/>
+        <rdfs:comment>azure</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#google -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#google">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#Google"/>
+        <hasCPU rdf:resource="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#googleCPU"/>
+        <hasHD rdf:resource="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#googleHD"/>
+        <hasPrice rdf:resource="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#googlePricing"/>
+        <hasRAM rdf:resource="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#googleRAM"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#googleCPU -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#googleCPU">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#CPU"/>
+        <resourceName>Virtual CPUs</resourceName>
+        <rdfs:comment>Virtual CPUs</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#googleHD -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#googleHD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#HD"/>
+        <resourceName>null</resourceName>
+        <rdfs:comment>null</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#googlePricing -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#googlePricing">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#Price"/>
+        <resourceName>pricing.Price (USD)</resourceName>
+        <rdfs:comment>pricing.Price (USD)</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#googleRAM -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#googleRAM">
+        <rdf:type rdf:resource="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#RAM"/>
+        <resourceName>Memory</resourceName>
+        <rdfs:comment>Memory</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#CPU"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#HD"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#Price"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#RAM"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#SO"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#CaaS"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#DaaS"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#MaquinaVirtual"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#RecursoDeComputacao"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

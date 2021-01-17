@@ -1,0 +1,19 @@
+version: '3'
+
+services:
+  backend:
+    build: ./back-end
+    volumes:
+      - ./back-end:/usr/src/app
+    ports:
+      - "8080:8080"
+    network_mode: host
+  frontend:
+    build: ./front-end
+    depends_on:
+      - backend
+    volumes:
+      - ./front-end:/usr/src/app
+    ports:
+      - "80:80"
+    network_mode: host
