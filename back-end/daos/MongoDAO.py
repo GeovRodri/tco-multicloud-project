@@ -1,3 +1,4 @@
+import os
 import datetime
 import pymongo
 from pymongo import MongoClient
@@ -8,7 +9,7 @@ class MongoDAO:
     database = None
 
     def __init__(self):
-        client = MongoClient('localhost', 27017, connect=False)
+        client = MongoClient(os.environ.get("DB_HOST", "localhost"), 27017, connect=False)
         self.database = client['clouds-price']
 
     def insert(self, collection_name, columns):

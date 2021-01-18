@@ -5,8 +5,8 @@
 Aplicação feita para o PIBIT pelos integrante Geovany, Gilberto e Jonas com a orientação do Raphael. O projeto consiste em uma ferramenta para Descoberta e Estimativa de Custo de Infraestrutura usando Computação em Nuvem.
 
 ## Observações
-Para rodar o projeto já tem que ter instalado o mongoDB na maquina, e para ter resultados cadastrados tem que rodar o cli antes. Para saber como rodar leia o README dentro do backend.
-
+- Para rodar o projeto já tem que ter instalado o mongoDB na maquina, e para ter resultados cadastrados tem que rodar o cli antes. Para saber como rodar leia o README dentro do backend.
+- Antes de rodar edita a variavel de ambiente DB_HOST no docker-compose.yml
 ### Iniciando todo o projeto
 ```
     $ docker-compose build

@@ -1,3 +1,4 @@
+import os
 import requests
 from django.shortcuts import render
 from django.views.generic import FormView
@@ -39,7 +40,7 @@ class Pesquisa(FormView):
                 {"field": "ram", "comparator": '>=', "value": int(data['ram'])}
             )
 
-        request = requests.post('http://localhost:8080/', json=request_body)
+        request = requests.post(f'http://{os.environ["BACKEND_HOST"]}:8080/', json=request_body)
         machines = request.json()
 
         ''' Adicionar o item que corresponde a maquina fisica '''
