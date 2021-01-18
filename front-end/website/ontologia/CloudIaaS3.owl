@@ -248,8 +248,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#AlibabaCPU">
         <rdf:type rdf:resource="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#CPU"/>
-        <resourceName>&apos;CPU&apos;:</resourceName>
-        <rdfs:comment>CPU</rdfs:comment>
+        <resourceName>&apos;Core&apos;:</resourceName>
+        <rdfs:comment>Core</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -268,8 +268,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#AlibabaPricing">
         <rdf:type rdf:resource="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#Price"/>
-        <resourceName>pricing.price</resourceName>
-        <rdfs:comment>pricing.price</rdfs:comment>
+        <resourceName>pricing.Pay-As-You-Go Hourly Price</resourceName>
+        <rdfs:comment>pricing.Pay-As-You-Go Hourly Price</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -278,8 +278,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#AlibabaRAM">
         <rdf:type rdf:resource="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#RAM"/>
-        <resourceName>&apos;Memory&apos;:</resourceName>
-        <rdfs:comment>Memory</rdfs:comment>
+        <resourceName>&apos;MEM (GB)&apos;:</resourceName>
+        <rdfs:comment>MEM (GB)</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -328,8 +328,8 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#AzureCPU">
         <rdf:type rdf:resource="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#CPU"/>
-        <resourceName>vCPU:</resourceName>
-        <rdfs:comment>vCPU</rdfs:comment>
+        <resourceName>&apos;vCPU(s)&apos;:</resourceName>
+        <rdfs:comment>vCPU(s)</rdfs:comment>
     </owl:NamedIndividual>
     
 
@@ -358,7 +358,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#AzureRAM">
         <rdf:type rdf:resource="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#RAM"/>
-        <resourceName>RAM:</resourceName>
+        <resourceName>&apos;RAM&apos;:</resourceName>
         <rdfs:comment>RAM</rdfs:comment>
     </owl:NamedIndividual>
     
@@ -419,7 +419,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#googleCPU">
         <rdf:type rdf:resource="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#CPU"/>
-        <resourceName>Virtual CPUs</resourceName>
+        <resourceName>&apos;Virtual CPUs&apos;:</resourceName>
         <rdfs:comment>Virtual CPUs</rdfs:comment>
     </owl:NamedIndividual>
     
@@ -449,7 +449,7 @@
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#googleRAM">
         <rdf:type rdf:resource="http://www.semanticweb.org/gilberto/ontologies/2019/4/CloudIaaS#RAM"/>
-        <resourceName>Memory</resourceName>
+        <resourceName>&apos;Memory&apos;:</resourceName>
         <rdfs:comment>Memory</rdfs:comment>
     </owl:NamedIndividual>
     
