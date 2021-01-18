@@ -1,8 +1,6 @@
 import asyncio
 from time import sleep
-
 from requests_html import HTML
-
 from commons.BaseSeleniumDriver import BaseSeleniumDriver
 from commons.Log import Log
 from models.Chrome import Chrome
@@ -27,8 +25,12 @@ class GoogleDriver(BaseSeleniumDriver):
             if frame.url == self.url or frame.url == 'about:blank':
                 continue
 
+            html = asyncio.get_event_loop().run_until_complete(frame.content())
+            if 'Machine type' not in html:
+                continue
+
             Log.debug(f'Frame {index} de {len(frames)}')
-            Chrome.driver._html = HTML(session=frame, url=frame.url, html=asyncio.get_event_loop().run_until_complete(frame.content()))
+            Chrome.driver._html = HTML(session=frame, url=frame.url, html=html)
             Chrome.driver._html.page = frame
 
             """ Pegando o select de seleção de localização """
