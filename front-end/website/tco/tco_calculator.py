@@ -25,7 +25,7 @@ class CalculadoraTco:
         self.config.read(config_file)
         self.config.sections()
 
-    def calcular(self, memoria=8, HD=1000, nucleos=4):
+    def calcular(self, memoria=8, HD=1000, nucleos=4, qtde_maquinas=1):
         if memoria is None or memoria == '':
             memoria = 8
 
@@ -108,7 +108,8 @@ class CalculadoraTco:
                 'ram': memoria,
                 'pricing': {
                     'region': 'Goiania',
-                    'price': 'ERROR'
+                    'price': 'ERROR',
+                    'total_price': 'ERROR'
                 }
             }
 
@@ -133,7 +134,8 @@ class CalculadoraTco:
             'ram': memoria,
             'pricing': {
                 'region': 'Goiania',
-                'price': valor_por_hora
+                'price': valor_por_hora,
+                'total_price': valor_por_hora
             }
         }
 

@@ -20,31 +20,31 @@ class Pesquisa(FormView):
             "select": ontology,
             "labels": ['cpu', 'hd', 'pricing', 'ram'],
             "filters": [],
-            "limit": 10# data['limit']
+            "limit": data['limit']
         }
 
         if data['cpu'] is not None and data['cpu'] != '':
             request_body['filters'].append(
-                # {"field": "cpu", "comparator": data['cpu_filter'], "value": int(data['cpu'])}
-                {"field": "cpu", "comparator": '>=', "value": int(data['cpu'])}
+                {"field": "cpu", "comparator": data['cpu_filter'], "value": int(data['cpu'])}
             )
 
-        # if data['hd'] is not None and data['hd'] != '':
-        #     request_body['filters'].append(
-        #         {"field": "hd", "comparator": data['hd_filter'], "value": int(data['hd'])}
-        #     )
+        if data['hd'] is not None and data['hd'] != '':
+            request_body['filters'].append(
+                {"field": "hd", "comparator": data['hd_filter'], "value": int(data['hd'])}
+            )
 
         if data['ram'] is not None and data['ram'] != '':
             request_body['filters'].append(
-                # {"field": "ram", "comparator": data['ram_filter'], "value": int(data['ram'])}
-                {"field": "ram", "comparator": '>=', "value": int(data['ram'])}
+                {"field": "ram", "comparator": data['ram_filter'], "value": int(data['ram'])}
             )
 
         request = requests.post(f'http://{os.environ["BACKEND_HOST"]}:8080/', json=request_body)
         machines = request.json()
+        for machine in machines:
+            machine['pricing']['total_price'] = float(machine.get('pricing', {}).get('price', 0)) * int(data['amount_vm'])
 
         ''' Adicionar o item que corresponde a maquina fisica '''
         calculadora_tco = CalculadoraTco()
-        machines.append(calculadora_tco.calcular(data['ram'], data['hd'], data['cpu']))
+        machines.append(calculadora_tco.calcular(data['ram'], data['hd'], data['cpu'], data['amount_vm']))
 
         return render(self.request, 'listagem.html', {'machines': machines})

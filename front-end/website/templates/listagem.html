@@ -16,7 +16,8 @@
                     <th>Memoria </th>
                     <th>HD </th>
                     <th>Região </th>
-                    <th>Preço </th>
+                    <th>Preço Unitário</th>
+                    <th>Preço</th>
                 </thead>
 
                 <tbody>
@@ -28,7 +29,8 @@
                             <td>{{ machine.ram|default_if_none:"-" }}</td>
                             <td>{{ machine.hd|default_if_none:"-" }}</td>
                             <td>{{ machine.pricing.region|default_if_none:"-" }}</td>
-                            <td>{{ machine.pricing.price|default_if_none:"-" }}</td>
+                            <td>{{ machine.pricing.price|default_if_none:"-"}}</td>
+                            <td>{{ machine.pricing.total_price|default_if_none:"-"}}</td>
                         </tr>
                     {% endfor %}
                 </tbody>
